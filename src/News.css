@@ -1,0 +1,46 @@
+.newsCont {
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 8vh;
+  padding: 5px 4vw;
+}
+
+/* NewsItem.css (or a separate CSS file) */
+.pagination-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0 5vw;
+  margin-bottom: 8vh;
+}
+
+.prev-button,
+.next-button {
+  padding: 0.5rem;
+  width: 100px;
+  font-size: 1rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.prev-button {
+  background-color: #007bff; /* Bluish color */
+  margin-right: 0.5rem;
+}
+
+.next-button {
+  background-color: #0056b3; /* Darker bluish color */
+  margin-left: 0.5rem;
+}
+
+.prev-button:disabled,
+.next-button:disabled {
+  background-color: #b0bec5; /* Disabled color */
+  cursor: not-allowed;
+}

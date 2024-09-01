@@ -1,0 +1,32 @@
+/* Loader.css */
+.loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0); /* Semi-transparent background */
+  z-index: 1000; /* High z-index to ensure it is on top */
+}
+
+.loader {
+  border: 8px solid rgba(0, 0, 0, 0.1); /* Light grey border */
+  border-left: 8px solid #007bff; /* Blue border */
+  border-radius: 50%;
+  width: 60px; /* Size of the spinner */
+  height: 60px; /* Size of the spinner */
+  animation: spin 1.2s linear infinite;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
